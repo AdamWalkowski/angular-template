@@ -1,0 +1,19 @@
+<h2>Products</h2>
+
+<div class="product-card" *ngFor="let product of products">
+  <h3>{{ product.name }}</h3>
+  <div class="field" *ngIf="product.description">
+    <label for="product-desc-field">Description:</label>
+    <p name="product-desc-field">{{ product.description }}</p>
+  </div>
+  <div class="field" *ngIf="product.price">
+    <label for="product-price-field">Price:</label>
+    <strong name="product-price-field">{{ product.price }}</strong>
+  </div>
+  <button (click)="share()">Share</button>
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

@@ -1,0 +1,17 @@
+.product-card {
+  background-color: #eeeeee;
+  padding: .5em;
+  margin: .5em;
+}
+
+.field {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
