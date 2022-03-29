@@ -1,7 +1,13 @@
 <h2>Products</h2>
 
 <div class="product-card" *ngFor="let product of products">
-  <h3>{{ product.name }}</h3>
+  <h3>
+    <a
+      [title]="product.name + '_details'"
+      [routerLink]="['/products', product.id]"
+      >{{ product.name }}</a
+    >
+  </h3>
   <div class="field" *ngIf="product.description">
     <label for="product-desc-field">Description:</label>
     <p name="product-desc-field">{{ product.description }}</p>
