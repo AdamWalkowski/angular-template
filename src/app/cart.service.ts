@@ -17,6 +17,14 @@ export class CartService {
     return this.items;
   }
 
+  getCartPrice() {
+    const price = this.items.reduce((sum: number, product: Product) => {
+      return sum + product.price;
+    }, 0);
+
+    return price;
+  }
+
   clearCart() {
     this.items = [];
     return this.items;
