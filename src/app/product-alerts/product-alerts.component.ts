@@ -10,5 +10,7 @@ export class ProductAlertsComponent implements OnInit {
   @Input() product!: Product;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('done');
+  }
 }
